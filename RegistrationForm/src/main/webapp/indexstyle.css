@@ -1,0 +1,28 @@
+*{
+	margin:0;
+	padding:0;	
+}
+body{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	height:100vh;
+}
+.container{
+	width:400px;
+	height:300px;
+	border:2px solid black;
+	text-align:center;
+}
+
+.anchor{
+	margin-top:10px;
+	
+}
+a{
+	text-decoration:none;
+	background-color:cyan;
+	border:2px solid black;
+	
+}

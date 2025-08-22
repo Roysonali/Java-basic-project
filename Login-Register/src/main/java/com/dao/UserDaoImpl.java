@@ -37,6 +37,7 @@ public class UserDaoImpl implements UserDao {
 				ps.setString(2, user.getPassword());
 				ps.setString(3, user.getEmail());
 				
+		        
 				int rowsAffected = ps.executeUpdate();
 				return rowsAffected > 0;
 				
