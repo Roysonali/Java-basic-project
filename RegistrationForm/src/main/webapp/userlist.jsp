@@ -28,11 +28,25 @@ table {
     </style>
 </head>
 <body>
+
+	<% 
+		response.setHeader("Cache-Control", "no-cache, no-store,must-revalidate");
+		response.setHeader("Pragma","no-cache");
+		response.setDateHeader("Expires",0);
+		
+		HttpSession currentSession = request.getSession(false);
+		if (currentSession == null || currentSession.getAttribute("username") == null) {
+		     response.sendRedirect("login.jsp");
+		     return; 
+		 }
+	
+	%>
+	
 	<h2>Registered User</h2>
 	<table>
 		<tr>
 			 <th>Username</th>
-            <th>Password</th> <!-- ⚠ Not recommended, better hide -->
+            <th>Password</th>
             <th>Email</th>
             <th>Contact</th>
             <th>Gender</th>
@@ -53,7 +67,8 @@ table {
             <td><%= u.getJoiningDate() %></td>
             <td><%= u.getAddress() %></td>
 		</tr>
-		<% 		}
+		<% 		
+				}
 			}
 		%>
 	</table>

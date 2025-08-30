@@ -4,25 +4,25 @@
 }
 body{
 	display:flex;
-	flex-direction:column;
-	justify-content:center;
 	align-items:center;
+	justify-content:center;
+	background-color:beige;
 	height:100vh;
+	
 }
 .container{
-	width:400px;
-	height:300px;
-	border:2px solid black;
-	text-align:center;
-}
-
-.anchor{
-	margin-top:10px;
 	
+	padding:50px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+	background-color:cyan;
+	gap:10px;
+	border-radius:10px;
+	color:white;
 }
 a{
 	text-decoration:none;
-	background-color:cyan;
-	border:2px solid black;
 	
 }

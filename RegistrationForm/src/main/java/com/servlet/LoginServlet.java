@@ -20,10 +20,16 @@ public class LoginServlet extends HttpServlet{
 		String username = req.getParameter("username");
 		String password = req.getParameter("password");
 		
-		if(userDao.isValid(username,password)) {
+		
+		if(username.equals("admin")) {
 			HttpSession session = req.getSession();
-			session.setAttribute("username", username);			
+			session.setAttribute("username",username);			
 			res.sendRedirect("UserListServlet");
+		}
+		else if(userDao.isValid(username,password)) {
+			HttpSession session = req.getSession();
+			session.setAttribute("username",username);			
+			res.sendRedirect("Welcome.jsp");
 			
 		}else {
 			res.sendRedirect("login.jsp?error=1");

@@ -6,9 +6,10 @@
 <meta charset="UTF-8">
 <title>Register</title>
 
-        
+ <link rel="stylesheet" type="text/css" href="indexstyle.css">       
 </head>
 <body>
+	<div class="container">
 	<form action="RegisterServlet" method="post">
 		<h1>Register</h1>
 		<label>Username</label><br>
@@ -30,9 +31,12 @@
 		 <input type="date" name="joiningDate"><br>
 		 <label>Address</label><br>
 		 <input type="text" name="address"><br><br>
+		
 		<button type="Submit" value="submit">Submit</button>
 		<input type="reset" value="reset">
+		
 	</form>
 	<p><a href="index.html">Back to Home</a></p>
+	</div>
 </body>
 </html>

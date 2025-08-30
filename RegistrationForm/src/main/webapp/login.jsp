@@ -5,6 +5,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Login</title>
+<link rel="stylesheet" type="text/css" href="indexstyle.css">
 </head>
 <body>
 	<div class="container">
@@ -14,7 +15,9 @@
 		<input type="text" name="username"><br>
 		<label>Password</label><br>
 		<input type="password" name="password"><br><br>
+		
 		<button type="Submit" value="submit">Submit</button>
+		
 		</form>
 		<p><a href="index.html">Back to Home</a></p>
 	</div>

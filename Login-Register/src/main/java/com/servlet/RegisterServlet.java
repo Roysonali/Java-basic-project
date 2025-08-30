@@ -1,14 +1,11 @@
 package com.servlet;
 
 import java.io.IOException;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
 
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import com.dao.User;
 import com.dao.UserDao;
@@ -31,9 +28,7 @@ public class RegisterServlet extends HttpServlet{
 			res.sendRedirect("login.jsp?registration=success");
 		}else {
 			res.sendRedirect("login.jsp?registration=error");
-		}
-		
-		
+		}				
 		
 	}
 }
